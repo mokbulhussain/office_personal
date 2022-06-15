@@ -1,0 +1,686 @@
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author: 
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+
+/* CSS Index 
+-----------------------------------
+1. Font css
+2. Theme default css
+3. Header
+4. Header Banner
+5. Feature
+6. LiveChat
+7. Client
+8. Pricing
+9. News Letter
+10. Footer
+
+*/
+
+
+/* 1. Font css */
+
+
+@font-face {
+    font-family: loraRegular;
+    src: url(../fonts/Lora-Regular.ttf);
+}
+
+@font-face {
+    font-family: loraMedium;
+    src: url(../fonts/Lora-Medium.ttf);
+}
+
+@font-face {
+    font-family: loraBold;
+    src: url(../fonts/Lora-Bold.ttf);
+}
+
+
+@font-face {
+    font-family: GilroyThin;
+    src: url(../fonts/Gilroy-Thin.otf);
+}
+
+@font-face {
+    font-family: GilroyMedium;
+    src: url(../fonts/Gilroy-Medium.otf);
+}
+@font-face {
+    font-family: GilroyRegular;
+    src: url(../fonts/Gilroy-Regular.otf);
+}
+
+@font-face {
+    font-family: GilroyLight;
+    src: url(../fonts/Gilroy-Light.otf);
+}
+
+@font-face {
+    font-family: GilroySemiBold;
+    src: url(../fonts/Gilroy-SemiBold.otf);
+}
+
+@font-face {
+    font-family: GilroyBold;
+    src: url(../fonts/Gilroy-Bold.otf);
+}
+
+
+
+
+/* 2. Theme default css */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.img {
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
+}
+
+.f-left {
+    float: left
+}
+
+.f-right {
+    float: right
+}
+
+.fix {
+    overflow: hidden
+}
+
+a,
+.button:hover {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+    color: #2B96CC;
+    text-decoration: none;
+}
+
+a,
+button {
+    color: #1696e7;
+    outline: medium none;
+}
+
+button:focus {
+    outline: 0 none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    color: #333333;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none
+}
+
+p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    color: #000000;
+}
+
+hr {
+    border-bottom: 1px solid #eceff8;
+    border-top: 0 none;
+    margin: 30px 0;
+    padding: 0;
+}
+
+label {
+    color: #7e7e7e;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+*::-moz-selection {
+    background: #d6b161;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #444;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #444;
+    color: #fff;
+    text-shadow: none;
+}
+
+*::-moz-placeholder {
+    color: #555555;
+    font-size: 14px;
+    opacity: 1;
+}
+
+*::placeholder {
+    color: #555555;
+    font-size: 14px;
+    opacity: 1;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 44px;
+    font-family: 'GilroyBold';
+    color: #3B406C;
+}
+
+.section-title p {
+    font-size: 16px;
+    color: #3B406C;
+    font-family: 'GilroyRegular';
+    line-height: 26px;
+    margin-top: -6px;
+}
+
+
+/* 3. Header*/
+
+header{
+    background-color: #F8F8FF;
+}
+.nav-menu {
+    width: 100%;
+    align-items: center;
+}
+
+.navbar-top {
+    padding-top: 40px;
+}
+
+a.navbar-brand {
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    font-family: loraRegular;
+}
+.nav-menu li {
+    margin-left: 8px;
+}
+
+.nav-menu li a {
+    color: #000000 !important;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: GilroyRegular;
+}
+
+.nav-menu li a:hover {
+    font-weight: bold;
+}
+a.nav-link:visited:active {
+    color: red !important;
+}
+
+.nav-menu-right li a {
+    color: #ffffff;
+    font-family: GilroySemiBold;
+    font-size: 14px;
+    padding: 0px;
+    margin-left: 24px;
+    line-height: 24px;
+}
+
+.nav-menu-right li.register a {
+    background-color: #1E3AB1;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: GilroyMedium;
+    width: 136px;
+    line-height: 16px;
+}
+
+
+.nav-menu-right li.register a:hover {
+    box-shadow: 0px 20px 40px 0 rgb(72 10 45 / 12%);
+    color: #ffffff;
+}
+
+
+/* 4. Header Banner */
+
+.banner{
+    background-color: #F8F8FF;
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+.banner-left-img {
+    position: relative;
+}
+.banner-left-img .banner-left {
+    width: 100%;
+    height: 472px;
+}
+.banner-circle-left {
+    position: absolute !important;
+    width: 26px !important;
+    height: 26px !important;
+    top: 35px;
+    right: -30px;
+}
+.banner-right-img{
+    position: relative;
+    text-align: right;
+}
+
+.banner-right-img .banner-right {
+    width: 100%;
+    height: 480px;
+  
+  
+}
+.banner-circle-right {
+    position: absolute;
+    width: 36px !important;
+    height: 36px !important;
+    top: 0px;
+    left: -36px;
+}
+
+.banner-content {
+    text-align: center;
+    position: relative;
+}
+.banner-squre{
+    position: absolute;
+    top: 80px;
+    right: 105px;
+    width: 53px !important;
+    height: 53px !important;
+}
+
+.banner-tringle{
+    position: absolute;
+    top: 60px;
+    left: 135px;
+    width: 43px !important;
+    height: 43px !important;
+}
+
+.banner-content img {
+    width: 80px;
+    height: 80px;
+}
+.banner-content h4 {
+    font-size: 22px;
+    font-family: GilroyMedium;
+    line-height: 32px;
+    margin-top: 20px;
+    color: #000000;
+}
+.banner-content h4 span{
+    color: #1E3AB1;
+}
+
+.banner-content h1 {
+    font-size: 80px;
+    color: #000000;
+    line-height: 100px;
+    font-family: loraMedium;
+    margin-top: 22px;
+}
+
+.banner-content p {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: AvenirRoman;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    line-height: 28px;
+}
+
+.banner-content ul {
+    margin-top: 30px;
+}
+
+.banner-content ul li {
+    display: inline;
+}
+
+.banner-content ul li.left-hand img {
+    width: 40px;
+    height: 40px;
+    margin-right: 50px;
+}
+
+.banner-content ul li.right-hand img {
+    width: 40px;
+    height: 40px;
+    margin-left: 50px;
+}
+
+.banner-content ul li a img {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+
+/* Banner Bottom */
+
+.banner-tab-menu{
+    background-color: #0C2696;
+    height: 120px;
+}
+
+.banner-tab-menu ul{
+    text-align: center;
+}
+
+.banner-tab-menu ul li button {
+    font-size: 44px;
+    color: #ffffff;
+    opacity: .5;
+  
+}
+
+
+
+
+/* 9. News Letter */
+
+section.newsletter {
+    background: #ffffff;
+    margin-top: 310px;
+}
+.newsletter-area {
+    background: #418BFF;
+    position: relative;
+    padding: 100px 142px;
+    border-radius: 184px 184px 24px 24px;
+}
+
+.newsletter-woman {
+    position: absolute;
+    /* top: -129px; */
+    bottom: 0px;
+    right: 145px;
+    z-index: 1;
+}
+
+.newsletter-content h3 {
+    font-size: 44px;
+    line-height: 54px;
+    color: #ffffff;
+    font-family: 'AvenirLight';
+}
+
+.newsletter-content p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: 'AvenirRoman';
+    margin-top: 18px;
+}
+
+.newsletter-content form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.newsletter-content form input {
+    height: 46px;
+    padding-left: 16px;
+    border-radius: 16px;
+    border: none;
+}
+
+.newsletter-content form button {
+    background: linear-gradient(180deg, #FFAD32 0%, #FF6F44 100%);
+    border-radius: 16px;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 10px 24px;
+    margin-left: 16px;
+    border: none;
+    box-shadow: none;
+}
+
+
+.newsletter-shape {
+    position: absolute;
+    top: 0px;
+    top: 20px;
+    right: 475px;
+}
+
+.newsletter-love {
+    position: absolute;
+    right: 117px;
+    bottom: 72px;
+    z-index: 0;
+}
+
+
+
+
+
+
+/* 10. Footer */
+
+footer {
+    background-color:#ffffff;
+    padding: 50px 0px 0px 0px;
+    margin-top: 100px;
+    position: relative;
+}
+
+
+.footer-container {
+    margin-top: 50px;
+}
+
+.footer-part1 img {
+    width: 162px;
+    height: 30px;
+}
+
+.footer-part1 p {
+    color: #3B406C;
+    font-size: 14px;
+    font-family: 'PoppinsRegular';
+    line-height: 24px;
+    margin-top: 24px;
+}
+
+.footer-part1 ul {
+    margin-top: 30px;
+}
+
+.footer-part1 ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer-part1 ul li a {
+    padding: 10px 14px;
+    border-radius: 52px;
+}
+
+.footer-part1 ul li a i {
+    color: #3B406C;
+    font-size: 20px;
+}
+
+.footer-part1 ul li a:hover i {
+    color: #5EC3FC;
+}
+
+.footer-part h3 {
+    color: #3B406C;
+    font-size: 22px;
+    font-family: 'AvenirHeavy';
+    line-height: 24px;
+}
+
+.footer-part ul li {
+    margin-top: 10px;
+}
+
+.footer-part ul li a {
+    color: #3B406C;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'PoppinsRegular';
+    line-height: 24px;
+}
+
+.footer-part ul li a:hover {
+    font-weight: 900;
+}
+
+.footer-part4 p {
+    color: #3B406C;
+    font-size: 14px;
+    font-family: 'PoppinsRegular';
+    line-height: 24px;
+}
+
+.footer-subscribe {
+    width: 256px;
+    height: 47px;
+    background: #F2FCFB;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 82px;
+    margin-top: 26px;
+}
+
+.footer-subscribe form input {
+    border: none;
+    background: transparent;
+    height: 30px;
+}
+
+.footer-subscribe form button {
+    border: none;
+    padding: 5px 10px;
+    background: transparent;
+    color: #FB8DC7;
+}
+
+.footer-subscribe form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    background: #ffffff;
+}
+
+
+.copyright {
+    background: #3B406C;
+    padding: 17px 0px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.copyright h5 {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 0px;
+    font-family: 'AvenirRoman';
+}
